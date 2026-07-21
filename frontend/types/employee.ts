@@ -72,15 +72,9 @@ export interface EmployeeFormData {
 
 export interface PredictionResult {
   prediction: number;
-  prediction_label:
-    | "Likely to Stay"
-    | "Likely to Leave";
-  attrition_probability: number | null;
-  stay_probability: number | null;
-  risk_level:
-    | "Low"
-    | "Medium"
-    | "High"
-    | "Unknown";
+  prediction_label: string;
+  attrition_probability: number;
+  stay_probability: number;
+  risk_level: "Low" | "Medium" | "High";
   model_name: string;
 }
