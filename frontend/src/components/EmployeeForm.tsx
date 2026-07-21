@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { Loader2, RotateCcw, Sparkles } from "lucide-react";
 import { toast } from "sonner";
-import { predictAttrition } from "@/lib/api";
+import { predictAttrition } from "@/src/lib/api";
 import type { EmployeeFormData, PredictionResult } from "@/types/employee";
 import PredictionResultCard from "./PredictionResult";
 
