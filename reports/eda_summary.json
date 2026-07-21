@@ -1,0 +1,19 @@
+{
+    "rows": 1470,
+    "columns": 35,
+    "numerical_columns": 26,
+    "categorical_columns": 9,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "attrition_yes_count": 237,
+    "attrition_no_count": 1233,
+    "attrition_yes_percentage": 16.12,
+    "constant_columns": [
+        "EmployeeCount",
+        "Over18",
+        "StandardHours"
+    ],
+    "possible_identifier_columns": [
+        "EmployeeNumber"
+    ]
+}

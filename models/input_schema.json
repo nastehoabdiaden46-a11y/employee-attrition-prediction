@@ -1,0 +1,229 @@
+{
+    "title": "Employee Attrition Prediction Input",
+    "target_column": "Attrition",
+    "feature_count": 30,
+    "features": [
+        {
+            "name": "Age",
+            "type": "integer",
+            "required": true,
+            "example": 41
+        },
+        {
+            "name": "BusinessTravel",
+            "type": "string",
+            "required": true,
+            "example": "Travel_Rarely",
+            "allowed_values": [
+                "Non-Travel",
+                "Travel_Frequently",
+                "Travel_Rarely"
+            ]
+        },
+        {
+            "name": "DailyRate",
+            "type": "integer",
+            "required": true,
+            "example": 1102
+        },
+        {
+            "name": "Department",
+            "type": "string",
+            "required": true,
+            "example": "Sales",
+            "allowed_values": [
+                "Human Resources",
+                "Research & Development",
+                "Sales"
+            ]
+        },
+        {
+            "name": "DistanceFromHome",
+            "type": "integer",
+            "required": true,
+            "example": 1
+        },
+        {
+            "name": "Education",
+            "type": "integer",
+            "required": true,
+            "example": 2
+        },
+        {
+            "name": "EducationField",
+            "type": "string",
+            "required": true,
+            "example": "Life Sciences",
+            "allowed_values": [
+                "Human Resources",
+                "Life Sciences",
+                "Marketing",
+                "Medical",
+                "Other",
+                "Technical Degree"
+            ]
+        },
+        {
+            "name": "EnvironmentSatisfaction",
+            "type": "integer",
+            "required": true,
+            "example": 2
+        },
+        {
+            "name": "Gender",
+            "type": "string",
+            "required": true,
+            "example": "Female",
+            "allowed_values": [
+                "Female",
+                "Male"
+            ]
+        },
+        {
+            "name": "HourlyRate",
+            "type": "integer",
+            "required": true,
+            "example": 94
+        },
+        {
+            "name": "JobInvolvement",
+            "type": "integer",
+            "required": true,
+            "example": 3
+        },
+        {
+            "name": "JobLevel",
+            "type": "integer",
+            "required": true,
+            "example": 2
+        },
+        {
+            "name": "JobRole",
+            "type": "string",
+            "required": true,
+            "example": "Sales Executive",
+            "allowed_values": [
+                "Healthcare Representative",
+                "Human Resources",
+                "Laboratory Technician",
+                "Manager",
+                "Manufacturing Director",
+                "Research Director",
+                "Research Scientist",
+                "Sales Executive",
+                "Sales Representative"
+            ]
+        },
+        {
+            "name": "JobSatisfaction",
+            "type": "integer",
+            "required": true,
+            "example": 4
+        },
+        {
+            "name": "MaritalStatus",
+            "type": "string",
+            "required": true,
+            "example": "Single",
+            "allowed_values": [
+                "Divorced",
+                "Married",
+                "Single"
+            ]
+        },
+        {
+            "name": "MonthlyIncome",
+            "type": "integer",
+            "required": true,
+            "example": 5993
+        },
+        {
+            "name": "MonthlyRate",
+            "type": "integer",
+            "required": true,
+            "example": 19479
+        },
+        {
+            "name": "NumCompaniesWorked",
+            "type": "integer",
+            "required": true,
+            "example": 8
+        },
+        {
+            "name": "OverTime",
+            "type": "string",
+            "required": true,
+            "example": "Yes",
+            "allowed_values": [
+                "No",
+                "Yes"
+            ]
+        },
+        {
+            "name": "PercentSalaryHike",
+            "type": "integer",
+            "required": true,
+            "example": 11
+        },
+        {
+            "name": "PerformanceRating",
+            "type": "integer",
+            "required": true,
+            "example": 3
+        },
+        {
+            "name": "RelationshipSatisfaction",
+            "type": "integer",
+            "required": true,
+            "example": 1
+        },
+        {
+            "name": "StockOptionLevel",
+            "type": "integer",
+            "required": true,
+            "example": 0
+        },
+        {
+            "name": "TotalWorkingYears",
+            "type": "integer",
+            "required": true,
+            "example": 8
+        },
+        {
+            "name": "TrainingTimesLastYear",
+            "type": "integer",
+            "required": true,
+            "example": 0
+        },
+        {
+            "name": "WorkLifeBalance",
+            "type": "integer",
+            "required": true,
+            "example": 1
+        },
+        {
+            "name": "YearsAtCompany",
+            "type": "integer",
+            "required": true,
+            "example": 6
+        },
+        {
+            "name": "YearsInCurrentRole",
+            "type": "integer",
+            "required": true,
+            "example": 4
+        },
+        {
+            "name": "YearsSinceLastPromotion",
+            "type": "integer",
+            "required": true,
+            "example": 0
+        },
+        {
+            "name": "YearsWithCurrManager",
+            "type": "integer",
+            "required": true,
+            "example": 5
+        }
+    ]
+}

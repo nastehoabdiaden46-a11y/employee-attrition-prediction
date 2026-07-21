@@ -1,0 +1,30 @@
+Column,Check,Status,Result
+BusinessTravel,Expected categories,Pass,
+Department,Expected categories,Pass,
+Gender,Expected categories,Pass,
+MaritalStatus,Expected categories,Pass,
+OverTime,Expected categories,Pass,
+Age,"Range [18, 100]",Pass,0 invalid rows
+DistanceFromHome,"Range [0, None]",Pass,0 invalid rows
+Education,"Range [1, 5]",Pass,0 invalid rows
+EnvironmentSatisfaction,"Range [1, 4]",Pass,0 invalid rows
+JobInvolvement,"Range [1, 4]",Pass,0 invalid rows
+JobLevel,"Range [1, 5]",Pass,0 invalid rows
+JobSatisfaction,"Range [1, 4]",Pass,0 invalid rows
+MonthlyIncome,"Range [0, None]",Pass,0 invalid rows
+NumCompaniesWorked,"Range [0, None]",Pass,0 invalid rows
+PercentSalaryHike,"Range [0, 100]",Pass,0 invalid rows
+PerformanceRating,"Range [1, 4]",Pass,0 invalid rows
+RelationshipSatisfaction,"Range [1, 4]",Pass,0 invalid rows
+StockOptionLevel,"Range [0, None]",Pass,0 invalid rows
+TotalWorkingYears,"Range [0, None]",Pass,0 invalid rows
+TrainingTimesLastYear,"Range [0, None]",Pass,0 invalid rows
+WorkLifeBalance,"Range [1, 4]",Pass,0 invalid rows
+YearsAtCompany,"Range [0, None]",Pass,0 invalid rows
+YearsInCurrentRole,"Range [0, None]",Pass,0 invalid rows
+YearsSinceLastPromotion,"Range [0, None]",Pass,0 invalid rows
+YearsWithCurrManager,"Range [0, None]",Pass,0 invalid rows
+Multiple columns,YearsAtCompany <= TotalWorkingYears,Pass,0 invalid rows
+Multiple columns,YearsInCurrentRole <= YearsAtCompany,Pass,0 invalid rows
+Multiple columns,YearsSinceLastPromotion <= YearsAtCompany,Pass,0 invalid rows
+Multiple columns,YearsWithCurrManager <= YearsAtCompany,Pass,0 invalid rows

@@ -1,0 +1,31 @@
+{
+    "source_file": "WA_Fn-UseC_-HR-Employee-Attrition.csv",
+    "output_file": "clean_employee_attrition.csv",
+    "original_rows": 1470,
+    "clean_rows": 1470,
+    "rows_removed": 0,
+    "duplicate_rows_removed": 0,
+    "original_columns": 35,
+    "clean_columns": 31,
+    "columns_removed_count": 4,
+    "constant_columns_removed": [
+        "EmployeeCount",
+        "Over18",
+        "StandardHours"
+    ],
+    "identifier_columns_removed": [
+        "EmployeeNumber"
+    ],
+    "renamed_columns": {},
+    "missing_values_before": 0,
+    "missing_values_after": 0,
+    "duplicates_after_cleaning": 0,
+    "target_mapping": {
+        "No": 0,
+        "Yes": 1
+    },
+    "target_class_counts": {
+        "stay_0": 1233,
+        "leave_1": 237
+    }
+}

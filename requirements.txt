@@ -1,0 +1,25 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+fastapi
+uvicorn
+joblib
+pydantic
+python-multipart
+requests
+jupyter
+
+
+# dev 
+fastapi>=0.119,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+pandas>=2.2,<4.0
+numpy>=1.26,<3.0
+scikit-learn>=1.5,<2.0
+joblib>=1.4,<2.0
+python-dotenv>=1.0,<2.0
+
+# UI

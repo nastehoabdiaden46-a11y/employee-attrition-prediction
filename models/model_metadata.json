@@ -1,0 +1,69 @@
+{
+    "project": "Employee Attrition Prediction",
+    "task": "Binary Classification",
+    "target_column": "Attrition",
+    "negative_class": {
+        "value": 0,
+        "label": "Stay"
+    },
+    "positive_class": {
+        "value": 1,
+        "label": "Leave"
+    },
+    "model_file": "best_model.joblib",
+    "model_type": "Pipeline",
+    "feature_count": 30,
+    "input_features": [
+        "Age",
+        "BusinessTravel",
+        "DailyRate",
+        "Department",
+        "DistanceFromHome",
+        "Education",
+        "EducationField",
+        "EnvironmentSatisfaction",
+        "Gender",
+        "HourlyRate",
+        "JobInvolvement",
+        "JobLevel",
+        "JobRole",
+        "JobSatisfaction",
+        "MaritalStatus",
+        "MonthlyIncome",
+        "MonthlyRate",
+        "NumCompaniesWorked",
+        "OverTime",
+        "PercentSalaryHike",
+        "PerformanceRating",
+        "RelationshipSatisfaction",
+        "StockOptionLevel",
+        "TotalWorkingYears",
+        "TrainingTimesLastYear",
+        "WorkLifeBalance",
+        "YearsAtCompany",
+        "YearsInCurrentRole",
+        "YearsSinceLastPromotion",
+        "YearsWithCurrManager"
+    ],
+    "probability_supported": true,
+    "risk_thresholds": {
+        "low": "probability < 0.30",
+        "medium": "0.30 <= probability < 0.60",
+        "high": "probability >= 0.60"
+    },
+    "python_version": "3.14.4",
+    "scikit_learn_version": "1.9.0",
+    "best_model_evaluation": {
+        "best_model": "Logistic Regression",
+        "selection_metric": "F1 Score",
+        "accuracy": 0.8605442176870748,
+        "precision": 0.6153846153846154,
+        "recall": 0.3404255319148936,
+        "f1_score": 0.4383561643835616,
+        "roc_auc": 0.8115255405289,
+        "model_file": "best_model.joblib",
+        "dataset_file": "C:\\Users\\Nasteho Abdi\\employee-attrition-prediction\\data\\processed\\clean_employee_attrition.csv",
+        "test_size": 0.2,
+        "random_state": 42
+    }
+}
