@@ -43,7 +43,7 @@ logger = logging.getLogger(__name__)
 
 def get_allowed_origins() -> list[str]:
     """
-    Read allowed frontend origins from the environment.
+    Read allowed frontend origins from environment variables.
     """
 
     origins = os.getenv(
@@ -101,17 +101,12 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=get_allowed_origins(),
     allow_credentials=True,
-    allow_methods=[
-        "GET",
-        "POST",
-    ],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
-@app.exception_handler(
-    ModelNotReadyError
-)
+@app.exception_handler(ModelNotReadyError)
 async def model_not_ready_handler(
     request: Request,
     exc: ModelNotReadyError,
@@ -121,18 +116,14 @@ async def model_not_ready_handler(
     """
 
     return JSONResponse(
-        status_code=(
-            status.HTTP_503_SERVICE_UNAVAILABLE
-        ),
+        status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
         content={
-            "detail": str(exc)
+            "detail": str(exc),
         },
     )
 
 
-@app.exception_handler(
-    PredictionServiceError
-)
+@app.exception_handler(PredictionServiceError)
 async def prediction_error_handler(
     request: Request,
     exc: PredictionServiceError,
@@ -142,11 +133,9 @@ async def prediction_error_handler(
     """
 
     return JSONResponse(
-        status_code=(
-            status.HTTP_500_INTERNAL_SERVER_ERROR
-        ),
+        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
         content={
-            "detail": str(exc)
+            "detail": str(exc),
         },
     )
 
@@ -161,9 +150,7 @@ def root() -> dict[str, str]:
     """
 
     return {
-        "message": (
-            "Employee Attrition Prediction API"
-        ),
+        "message": "Employee Attrition Prediction API",
         "documentation": "/docs",
         "health": "/health",
         "prediction": "/predict",
@@ -205,15 +192,11 @@ def health_check() -> HealthResponse:
     responses={
         422: {
             "model": ErrorResponse,
-            "description": (
-                "Request validation error"
-            ),
+            "description": "Request validation error",
         },
         503: {
             "model": ErrorResponse,
-            "description": (
-                "Model is unavailable"
-            ),
+            "description": "Model is unavailable",
         },
     },
     tags=["Prediction"],
@@ -236,8 +219,6 @@ def predict_attrition(
 
     except ValueError as exc:
         raise HTTPException(
-            status_code=(
-                status.HTTP_422_UNPROCESSABLE_ENTITY
-            ),
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
