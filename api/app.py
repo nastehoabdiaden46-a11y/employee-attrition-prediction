@@ -50,7 +50,7 @@ def get_allowed_origins() -> list[str]:
         "ALLOWED_ORIGINS",
         (
             "http://localhost:3000,"
-             "https://employee-attrition-prediction-frontend.vercel.app",
+             "https://employee-attrition-prediction-k8ee.vercel.app",
         ),
     )
 
