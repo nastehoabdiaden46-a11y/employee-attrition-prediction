@@ -4,7 +4,7 @@ import {
   Gauge,
   ShieldCheck,
 } from "lucide-react";
-import type { PredictionResult } from "@/types/employee";
+import type { PredictionResult } from "@/src/types/employee";
 
 interface Props {
   result: PredictionResult | null;

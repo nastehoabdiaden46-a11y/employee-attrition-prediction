@@ -1,5 +1,5 @@
-import DashboardHeader from "@/components/DashboardHeader";
-import EmployeeForm from "@/components/EmployeeForm";
+import DashboardHeader from "@/src/components/DashboardHeader";
+import EmployeeForm from "@/src/components/EmployeeForm";
 
 export default function HomePage() {
   return (

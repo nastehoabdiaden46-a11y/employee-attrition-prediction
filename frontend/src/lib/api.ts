@@ -1,7 +1,7 @@
 import type {
   EmployeeFormData,
   PredictionResult,
-} from "@/types/employee";
+} from "@/src/types/employee";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL ??
