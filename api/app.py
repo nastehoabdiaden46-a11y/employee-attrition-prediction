@@ -46,12 +46,14 @@ def get_allowed_origins() -> list[str]:
     Read allowed frontend origins from environment variables.
     """
 
+    default_origins = (
+        "http://localhost:3000,"
+        "https://employee-attrition-prediction-k8ee.vercel.app"
+    )
+
     origins = os.getenv(
         "ALLOWED_ORIGINS",
-        (
-            "http://localhost:3000,"
-             "https://employee-attrition-prediction-k8ee.vercel.app",
-        ),
+        default_origins,
     )
 
     return [
