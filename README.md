@@ -455,7 +455,7 @@ Its predictions should not be used as the only basis for employment decisions. H
 
 Nasteho Abdi Aadan
 
-GitHub: nastehoabdiaden46-a11y
+GitHub: https://github.com/nastehoabdiaden46-a11y
 
 ⭐ Support
 
